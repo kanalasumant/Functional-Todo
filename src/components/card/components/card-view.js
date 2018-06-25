@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { updateCard, deleteCard } from "./actions";
+import { updateCard, deleteCard } from "../actions";
 
 import { Icon, Row, Col } from "antd";
 
-import getCard from "./get-card-selector";
+import getCard from "../../shared/selectors/get-item-selector";
 
-import ModalRenderProp from "../shared/modal-render-prop";
+import ModalRenderProp from "../../shared/modal-render-prop";
 
-import "./card-style.css";
+import "../card-style.css";
 
 class CardView extends Component {
   deleteCard = id => this.props.deleteCard(id);
@@ -56,7 +56,7 @@ class CardView extends Component {
 }
 
 const mapStateToProps = ({ card }, { listId }) => ({
-  card: getCard(card, listId)
+  card: getCard(card, "listId", listId)
 });
 
 const mapDispatchToProps = {

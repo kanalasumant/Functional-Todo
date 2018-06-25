@@ -13,7 +13,7 @@ This app is divided into 2 sections.
 - This project uses react, redux and Ant UI components.
 - I started to designing a single object for the store which consisted of a top level boards array and other keys like currentId, etc.. to keep track of the running board state.
 - Each board array had it's associated list array and it's relevant keys. Similarly each list consisted of an array of cards.
-- After writing the reducers for create, update and delete of a board object, I realized that managing reducer logic was getting quite nested and the at same time convoltued and harder to reason about, especially for list object and even worse for a card object.
+- After writing the reducers for create, update and delete of a board object, I realized that managing reducer logic was getting quite **_nested_** and the at same time **_convoluted_** and harder to reason about, especially for list object and even worse for a card object.
 - This led to me find out about a common and a great architecture for designing store - **Normalization**
 
 - This led to me separate board, list and card into separate objects.
@@ -26,7 +26,7 @@ This app is divided into 2 sections.
 
 #### UI & application state
 
-- I found out that the best way to organize state in components is to keep UI state in the component itself and the business logic enabled state in redux store.
+- I found out that the best way to organize state in components is to keep **UI state** in the **component** itself and the **business logic** enabled state in **redux store**.
   - State related to Modal and Input components are handled in stateful components.
   - Application state such as board, list and card's details such as text, ids are kept in redux store.
     <br />
@@ -106,9 +106,11 @@ export default combineReducers({
 
 ### Remarks
 
-- I have learned a few important patterns building this app such as code composition with the help of **reusable patterns** like **render props**, **normalizing state** for structuring otherwise **deeply nested state**. I have also learned a bit about reducer composition, slicing state trees, usage of selectors by ardently following the **re-dcuks** pattern.
+- Further optimizations such as memoizing the selectors would and the react component to make them pure could be done, but upon the time constraints I chose to skip them for now.
 
--
+- I have learned a few important patterns building this app such as code composition with the help of **reusable patterns** like **render props**, **normalizing state** for structuring otherwise **deeply nested state**. I have also learned a bit about reducer composition, slicing state trees, usage of selectors by ardently following the **re-ducks** pattern.
+
+- There is still a lot to learn and I think I'm on the right track for achieving that.
 
 ## License
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { updateBoard } from "../board/actions";
 
-import ListViewContent from "../list/list-view-content";
+import ListViewContent from "../list/components/list-view-content";
 import ModalRenderProp from "../shared/modal-render-prop";
 
 import filterBoardDetails from "./filter-board-details-selector";

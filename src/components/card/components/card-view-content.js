@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { createCard } from "./actions";
+import { createCard } from "../actions";
 
 import { Row, Col } from "antd";
 
 import CardView from "./card-view";
-import ModalRenderProp from "../shared/modal-render-prop";
+import ModalRenderProp from "../../shared/modal-render-prop";
 
-import "./card-style.css";
+import "../card-style.css";
 
 class CardViewContent extends Component {
   createCard = ({ inputValue }) => {

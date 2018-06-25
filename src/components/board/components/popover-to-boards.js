@@ -3,10 +3,10 @@ import { connect } from "react-redux";
 import { Col, Icon, Popover } from "antd";
 
 import Boards from "./boards";
-import { gotoBoard, deleteBoard } from "./actions";
-import getBoardList from "./get-board-list-selector";
+import { gotoBoard, deleteBoard } from "../actions";
+import getBoardList from "../get-board-list-selector";
 
-import "./board-style.css";
+import "../board-style.css";
 
 const popoverToBoards = ({ board, gotoBoard, deleteBoard }) => (
   <Col span={8} className="boards">

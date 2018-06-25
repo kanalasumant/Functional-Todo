@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { createBoard } from "./actions";
+import { createBoard } from "../actions";
 
 import { Col, Icon } from "antd";
 
-import ModalRenderProp from "../shared/modal-render-prop";
+import ModalRenderProp from "../../shared/modal-render-prop";
 
-import "./board-style.css";
+import "../board-style.css";
 
 class ModalToCreateBoard extends Component {
   createBoard = ({ inputValue }) => {

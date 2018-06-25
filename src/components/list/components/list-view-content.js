@@ -1,11 +1,11 @@
 import React, { createRef, Component } from "react";
 import { connect } from "react-redux";
-import { createList } from "./actions";
+import { createList } from "../actions";
 import { Input } from "antd";
 
 import ListView from "./list-view";
 
-import "./list-style.css";
+import "../list-style.css";
 
 class ListViewContent extends Component {
   textInputRef = createRef();
