@@ -108,7 +108,7 @@ export default combineReducers({
 
 - Further optimizations such as memoizing the selectors would and the react component to make them pure could be done, but upon the time constraints I chose to skip them for now.
 
-- I have learned a few important patterns building this app such as code composition with the help of **reusable patterns** like **render props**, **normalizing state** for structuring otherwise **deeply nested state**. I have also learned a bit about reducer composition, slicing state trees, usage of selectors by ardently following the **re-ducks** pattern.
+- I have learned a few important patterns building this app such as code composition with the help of **reusable patterns** like **render props**, **normalizing state** for structuring otherwise **deeply nested state**. I have also learned a bit about reducer composition, slicing state trees, usage of selectors by ardently following the **re-ducks** pattern. Ant UI components took care of the responsiveness of the mobile, so the app works flawlessly on mobile browsers too.
 
 - There is still a lot to learn and I think I'm on the right track for achieving that.
 
