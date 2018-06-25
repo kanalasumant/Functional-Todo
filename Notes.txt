@@ -1,0 +1,13 @@
+README:
+
+** state architecture: Normalization
+
+** Managed UI state locally such as, for toggling modals, popovers.
+
+refactor reducers to extract common state.board, etc.. into variables
+
+refactored into render prop repeating patterns like (list-view, card-view, list-view-content, card-view-content)
+
+** slice reducers
+
+** re-ducks pattern

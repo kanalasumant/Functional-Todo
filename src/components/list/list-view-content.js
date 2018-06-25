@@ -1,16 +1,21 @@
 import React, { createRef, Component } from "react";
 import { connect } from "react-redux";
-import { createList } from "../reducer/boards-reducer";
+import { createList } from "./actions";
 import { Input } from "antd";
 
 import ListView from "./list-view";
+
+import "./list-style.css";
 
 class ListViewContent extends Component {
   textInputRef = createRef();
 
   createList = () => {
-    const boardName = this.textInputRef.current.input.value;
-    this.props.createList(boardName);
+    const listDetails = {
+      listName: this.textInputRef.current.input.value,
+      activeId: this.props.activeId
+    };
+    this.props.createList(listDetails);
     this.textInputRef.current.input.value = "";
   };
 
@@ -31,11 +36,15 @@ class ListViewContent extends Component {
   }
 }
 
+const mapStateToProps = ({ board: { activeId } }) => ({
+  activeId
+});
+
 const mapDispatchToProps = {
   createList
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(ListViewContent);

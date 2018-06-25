@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { updateList, deleteList } from "../reducer/boards-reducer";
+import { updateList, deleteList } from "./actions";
 
 import { Icon, Row, Col } from "antd";
 
-import CardViewContent from "./card-view-content";
-import ModalRenderProp from "./modal-render-prop";
+import CardViewContent from "../card/card-view-content";
+import ModalRenderProp from "../shared/modal-render-prop";
 
 import getList from "./get-list-selector";
+
+import "./list-style.css";
 
 class ListView extends Component {
   deleteList = id => this.props.deleteList(id);

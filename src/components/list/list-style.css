@@ -1,0 +1,71 @@
+.main-board-view-content {
+  margin-top: 10px;
+  padding: 10px 0;
+  overflow-x: auto;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.main-list-view-contain {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.main-list-view {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 100%;
+  background: #e2e4e6;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.row-padding {
+  padding: 0 10px;
+}
+
+.add-list-title {
+  padding: 25px;
+  background-color: #055c8f;
+  border: 0px;
+  color: #ffffff;
+}
+
+.main-list-view-title {
+  width: 300px;
+  margin: 5px;
+}
+
+.main-list-view-input {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #e2e4e6;
+  color: #404041;
+  cursor: pointer;
+}
+
+.main-list-view-icon {
+  top: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-card-view-input {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #404041;
+  cursor: pointer;
+}

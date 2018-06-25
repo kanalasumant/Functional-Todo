@@ -1,6 +1,8 @@
 import React from "react";
 import { Icon, List } from "antd";
 
+import "./board-style.css";
+
 const Boards = ({ board, gotoBoard, deleteBoard }) => (
   <List
     bordered

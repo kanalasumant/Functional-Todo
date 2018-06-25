@@ -1,0 +1,29 @@
+.main-card-view-icon {
+  top: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-card-view-icon:hover {
+  font-weight: bolder;
+}
+
+.add-card {
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 15px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.add-card > p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.add-card:hover {
+  text-decoration: underline;
+  background-color: #a5a5a5;
+}

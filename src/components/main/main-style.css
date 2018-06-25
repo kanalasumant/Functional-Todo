@@ -1,0 +1,21 @@
+.no-boards {
+  font-size: 32px;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-board-view {
+  margin: 10px;
+}
+
+.main-board-view-header {
+  display: inline;
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}

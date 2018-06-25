@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
-import Header from "./components/header";
-import BoardView from "./components/board-view";
+import Header from "./components/header/header";
+import BoardView from "./components/main/board-view";
 
 const App = () => (
   <Fragment>

@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { updateCard, deleteCard } from "../reducer/boards-reducer";
+import { updateCard, deleteCard } from "./actions";
 
 import { Icon, Row, Col } from "antd";
 
 import getCard from "./get-card-selector";
 
-import ModalRenderProp from "./modal-render-prop";
+import ModalRenderProp from "../shared/modal-render-prop";
+
+import "./card-style.css";
 
 class CardView extends Component {
   deleteCard = id => this.props.deleteCard(id);

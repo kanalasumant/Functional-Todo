@@ -1,0 +1,13 @@
+.boards {
+  text-align: left;
+}
+
+.boards-icon,
+.boards-item,
+.create-board-icon {
+  cursor: pointer;
+}
+
+.create-board {
+  text-align: right;
+}
